@@ -1,0 +1,77 @@
+<!--Landing page  -->
+<!-- blank canvas on main page -->
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingPage.css">
+    <title>Ideation</title>
+</head>
+<body>
+    <header>Ideation</header>
+     <nav>
+         <ul>
+             <li> <a href="./landingPage.html">Home</a></li>
+             <li><a href="./boards.html">Boards</a></li>
+            <li><a href="./profile.html">Profile</a></li> 
+            <li><a href="./misc.html">Misc</a></li>
+         </ul>
+     
+     <div class ="login">
+        <form action="" method="post">
+            <input type="text" name="mailuserid" placeholder="Username or Email">
+            <input type="password" name="pwd" placeholder="Password...">
+            <button type="submit" name="login-submit">Login</button>
+          </form>
+          <a href="./signUpPage.html">Signup</a>
+          <form action="" method="post">
+            <button type="submit" name="logout-submit">Logout</button>
+      <!-- <a href="#">Sign Up</a> -->
+    </div>
+</nav>
+
+<main>
+  <h2>Directions</h2>
+  <p>Drag and drop images into the boxes and move the boxes around</p>
+
+    <div class = "container">
+    <!-- <div class="imgDropBoxes"> -->
+        <div class="box" id="box1" draggable="true"></div>
+        <div class="box" id="box2" draggable="true"></div>
+        <div class="box" id="box3" draggable="true"></div>
+        <div class="box" id="box4" draggable="true"></div>
+        <div class="box" id="box5" draggable="true"></div>
+        <div class="box" id="box6" draggable="true"></div>
+        <div class="box" id="box7" draggable="true"></div>
+        <div class="box" id="box8" draggable="true"></div>
+        <div class="box" id="box9" draggable="true"></div>
+        <div class="box" id="box10" draggable="true"></div>
+    </div>
+</div>
+
+<div class = "tools-sidebar">
+  <form id="create-sidebar">
+    <p>Enter the number of boxes you wish to generate</p>
+    <input type="text" id="box-number" placeholder="Number of boxes"/>
+    <button type="button" name="generateBox-submit">Generate Boxes</button>
+  
+  </form>
+</div>
+
+
+
+
+</main>
+
+
+
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+<script src="./index.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!-- user sign up page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="stylesheet" href="signUpPage.css">
+</head>
+<body>
+    <header>Ideation</header>
+
+    <main>
+
+        <!-- <h2>Sign Up Form</h2> -->
+        <div class="hero">
+                <div class="form-box">
+                        <div class="button-box">
+                            <div id="btn"></div>
+                            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                            <button type="button" class="toggle-btn" onclick="register()">Register</button>       
+                    </div>
+                    <div class="social-icons">
+                        <img src="facebook-icon.png">
+                        <img src="twitter-icon.png">
+                        <img src="googleplus-icon.png">
+                    </div> 
+
+                    <form action="/auth" method="post" id="login" class="input-group">
+                        <input type="text" class="input-field" placeholder="User ID" required>
+                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" name="checkbox" class="check-box">
+                        <label for="checkbox">Remember Password</label>
+                        <button type="submit" class="submit-btn">Login</button>
+                    </form>
+
+                    <form id="register" class="input-group">
+                        <input type="text" class="input-field" placeholder="User ID" required>
+                        <input type="email" class="input-field" placeholder="Email" required>
+                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" name="checkbox" class="check-box">
+                        <label for="checkbox">I agree to the Terms and Conditions</label>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+             </div>
+        
+            <!-- <input type='text' id="username" placeholder="Username"/>
+            <input type='text' id="firstName" placeholder="First Name"/>
+            <input type="text" id="password" placeholder="Password"/>
+            <input type="text" id="email" placeholder="Email"/>
+            <button>Sign Up</button>
+        </form> -->
+   
+
+
+    </main>
+
+    <script src="./signup-page.js"></script>
+    
+</body>
+</html>
